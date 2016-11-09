@@ -10,7 +10,7 @@ public abstract class Item {
     }
 
     public Item(Point location) {
-        this.location = new Point(location.x, location.y);
+        this.location = location.clone();
     }
 
     public int getX() {

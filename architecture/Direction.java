@@ -24,10 +24,10 @@ public enum Direction {
 
         switch (this) {
             case UP:
-                dy = 1;
+                dy = -1;
                 break;
             case DOWN:
-                dy = -1;
+                dy = 1;
                 break;
             case LEFT:
                 dx = -1;

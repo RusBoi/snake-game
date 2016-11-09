@@ -3,7 +3,6 @@ package models;
 import architecture.Direction;
 import architecture.Map;
 import architecture.Point;
-import com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeBodyPart;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,5 +65,11 @@ public class Snake {
             nowPart = nowPart.next;
         }
         return body;
+    }
+
+    public void changeDirection(Direction dir) {
+        if (!(direction.getDelta().x + dir.getDelta().x == 0 && direction.getDelta().y + dir.getDelta().y == 0)) {
+            direction = dir;
+        }
     }
 }

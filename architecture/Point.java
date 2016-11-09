@@ -17,4 +17,8 @@ public class Point {
     public String toString() {
         return String.format("x=%1$s y=%2$s", x, y);
     }
+
+    public Point clone() {
+        return new Point(x, y);
+    }
 }
